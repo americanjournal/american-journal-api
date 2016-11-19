@@ -35,8 +35,9 @@ ActiveRecord::Schema.define(version: 20161119215125) do
   add_index "stories", ["value_id"], name: "index_stories_on_value_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.integer  "age",        limit: 4, null: false
-    t.integer  "candidate",  limit: 4, null: false
+    t.integer  "age",        limit: 4,   null: false
+    t.integer  "candidate",  limit: 4,   null: false
+    t.string   "username",   limit: 255, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
