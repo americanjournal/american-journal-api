@@ -13,6 +13,7 @@ class ValuesController < ApplicationController
       data = {
         id: value.id,
         name: value.name,
+        prompt: value.prompt,
         stories: stories
       }
 

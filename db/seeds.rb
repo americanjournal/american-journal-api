@@ -9,7 +9,7 @@
 User.create(age: 30, candidate: "Hillary", username: "aaronstrick")
 
 ["Security", "Patriotism", "Human Equality"].each do |value_name|
-  value = Value.create(name: value_name)
+  value = Value.create(name: value_name, prompt: Faker::Hipster.sentence(8))
 
   ["Aaron", "Jared", "Emily", "Jing", "Rohan"].each do |person_name|
     u = User.create(
