@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   end
 
   resources :stories, only: [:show] 
+  resources :reactions, only: [:get, :post]
 end
